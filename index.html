@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site title -->
     <title>Fruit Burst</title>
+    <!-- tailwind link added -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom style -->
     <script>
         tailwind.config = {
             theme: {
@@ -18,9 +21,71 @@
             }
         }
     </script>
+    <!-- custom styles -->
+    <style>
+        .style-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
+    <header class=".style-font">
+        <nav class="lg:bg-[#F85559] lg:mx-60 lg:p-8 mt-12 rounded-full lg:text-white ">
+            <div class="flex">
+                <div class="flex">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-lg  rounded-box w-52">
+                            <li><a>About US</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:hidden">
+                        <a class="flex items-center gap-4 normal-case font-bold text-xl">
+                            <span>
+                                <img src="./images/logo.png" alt="">
+                            </span>Fruit Burst</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About US</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                    <div class="lg:visible">
+                        <a
+                            class="flex items-center gap-4 lg:ml-40 normal-case font-bold text-center text-2xl lg:text-4xl"><span><img
+                                    src="./images/logo.png" alt=""></span>Fruit Burst</a>
+                    </div>
+                </div>
+
+                <div class=" invisible lg:visible">
+                    <input type="text" placeholder="Search here"
+                        class="input rounded-full lg:px-20 lg:ml-40 w-full max-w-xs" />
+                        
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main class=".style-font">
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
