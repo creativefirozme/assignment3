@@ -16,17 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind custom style -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        'hero-bg': "url('./images/banner1.png'),",
-                    },
-                },
-            },
-        }
-    </script>
+    
     <!-- custom styles -->
     <style>
         .style-font {
@@ -284,9 +274,9 @@
         </section>
         <!-- Meet the team section -->
         <section class="lg:mt-36 mt-8 md:mt-10 lg:ml-52 p-5">
-            <div class="hero lg:w-[1440px] lg:h-[690px]"
+            <div class="hero lg:rounded-lg rounded-xl  lg:w-[1440px] lg:h-[690px]"
                 style="background-image: url('./images/banner1.png'); background-repeat: no-repeat; background-position: center;">
-                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-overlay lg:rounded-lg rounded-xl bg-opacity-70"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-m text-center">
                         <h1 class="lg:mt-24 lg:mb-5 mb-3 lg:text-5xl text-lg font-black">Meet the team section</h1>
@@ -568,7 +558,7 @@
             </div>
         </section>
     </main>
-    <footer class="mt-36">
+    <footer class="mt-36 .style-font">
         <footer class="footer footer-center p-10 bg-[#121212] text-base-content text-white rounded">
             <div class="flex gap-4 lg:mt-36 md:mt-16 lg:mb-4">
                 <img class="w-[54px]" src="./images/logo.png" alt="">
